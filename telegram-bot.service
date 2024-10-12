@@ -1,0 +1,13 @@
+[Unit]
+Description=Telegram bot poller used to manage this server
+After=network-online.target
+
+[Service]
+WorkingDirectory=/srv/bot
+ExecStart=/srv/bot/bin/python3 /srv/bot/bot.py
+KillMode=process
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
+

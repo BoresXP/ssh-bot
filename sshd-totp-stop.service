@@ -1,0 +1,9 @@
+[Unit]
+Description=Stop sshd-totp
+
+[Service]
+ExecStart=/srv/bot/ssh-disable.sh
+Type=simple
+
+[Install]
+

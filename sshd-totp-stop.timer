@@ -1,0 +1,9 @@
+[Unit]
+Description=Stop sshd-totp every night
+
+[Timer]
+OnCalendar=*-*-* 03:00:00
+
+[Install]
+WantedBy=timers.target
+
